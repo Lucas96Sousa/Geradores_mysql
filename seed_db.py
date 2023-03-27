@@ -4,7 +4,7 @@ fake = Faker(['pt_BR'])
 
 sqls = []
 
-for i in range(20):
+for i in range(1000):
     nome = fake.name()
     cpf = fake.ssn()
     tel = fake.msisdn()
@@ -13,6 +13,6 @@ for i in range(20):
     sql = "INSERT INTO clientes VALUES('{}', '{}', '{}', '{}', '{}');".format(nome, cpf, tel, email, endereco)
     sqls.append(sql)
 
-with open('insert.sql', 'w') as f:
+with open('../insert.sql', 'w') as f:
     for i, sql in enumerate(sqls):
         f.write(sql)

@@ -1,10 +1,9 @@
-import pandas as pd
 from faker import Faker
 fake = Faker(['pt_BR'])
 
 sqls = []
 
-for i in range(1000):
+for i in range(500):
     nome = fake.name()
     cpf = fake.ssn()
     tel = fake.msisdn()

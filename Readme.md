@@ -3,6 +3,7 @@
 
 # ShellScript
 <p>Necessário instalar o csvlookup caso queira um output como csv</p>
-```
+
+```python
 pip install csvlookup
 ```
